@@ -16,7 +16,7 @@ h2{
     margin-bottom : 20px ;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
-.visual_boy,.gba{
+.Emulator_rom{
     width: 400px;
     margin: 0 auto;
     img{
@@ -53,4 +53,12 @@ h2{
 .item_item:hover{
     width: 210px;
     color: #555555;
+}
+
+
+@media only screen and (max-width: 590px){
+    .Emulator_rom{
+        width: 80%;
+    }
+    
 }
