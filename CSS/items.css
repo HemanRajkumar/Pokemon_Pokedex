@@ -190,11 +190,8 @@ tbody{
 .fixed div{
     display: flex;
     align-items: center;
-    width: 200px;
-    vertical-align: middle;
-}
-.cate{
-    width: 150px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .not_found_message{
