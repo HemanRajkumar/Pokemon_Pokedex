@@ -1,0 +1,275 @@
+.pokedexitem{
+    background-color: red;
+    a{
+        filter: brightness(0) invert(1);
+    }
+}
+
+
+
+.search_container{
+    width: 1280px;
+    background-color: #313131;
+    color: white;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+@media  only screen and (max-width: 1285px) {
+    .search_container{
+        width: 100%;
+    }
+}
+.search_wrapper{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px 2px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100px;
+    
+}
+.search_wrap{
+    input{
+        margin-top: 25px;
+        width: 90%;
+        height: 40px;
+        border: 3px solid gray;
+        border-radius: 5px;
+        padding: 0 5px;
+        outline: none;
+    }
+}
+
+
+.search_instruction{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(119, 194, 44);
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 20px;
+}
+.filter_instruction{
+    margin-top: 20px;
+}
+
+
+.search_label{
+    font-size: 25px;
+}
+
+
+
+
+.sort_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.sort_img_wrapper{
+    display: flex;
+    align-items: center;
+    .sBtn_Text{
+        margin-left: 5px;
+    }
+}
+
+.sort_region,.sort_alphanumeric{
+    color: #616161;
+    font-size: 25px;
+}
+
+
+.select_btn{
+    display: flex;
+    width: 350px;
+    height: 55px;
+    background-color: #313131;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    img{
+        filter: brightness(0) invert(1);
+    }
+    i{
+        font-size: 25px;
+        transition: 0.3s;
+    }
+}
+.sort_region .select_btn{
+    width: 250px;
+}
+
+
+.sort_region.active .select_btn i{
+    transform: rotate(-180deg);
+}
+.sort_alphanumeric.active .select_btn i{
+    transform: rotate(-180deg);
+}
+.options{
+    position: relative;
+    padding: 20px;
+    background-color: #313131;
+    margin-top: 10px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+.sort_region.active .options{
+    display: block;
+}
+
+.sort_alphanumeric.active .options{
+    display: block;
+}
+
+.option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+.option:hover{
+    background-color: #616161;
+}
+
+.option_text{
+    font-size: 18px;
+
+}
+
+.list_wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+.list_item {
+    background-image: url(../Images/Background/pikachu_pattern.png);
+    width: 161px;
+    height: 220px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    .img_wrap{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+.img_wrap img{
+    background-color: #f2f2f2;
+    width: 158px;
+    height: 158px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.img_wrap{
+    margin-bottom: 10px;
+}
+.number_wrap,.name_wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.name_wrap{
+    text-transform: capitalize;
+}
+
+.not_found_message{
+    display: none;
+    width: 80%;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: red;
+    margin: 0 auto;
+    p{
+        color: #313131;
+    }
+    ul li{
+        color: #616161;
+        margin-left: 30px;
+        list-style: disc;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  only screen and (max-width: 1150px) {
+    .search_wrapper,.sort_wrapper{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 818px){
+    .search_wrapper{
+        margin: 0 auto;
+        padding: 20px 2px;
+        display: block;
+        
+    }
+    .search_wrap{
+        input{
+            margin-top: 25px;
+            width: 80%;
+            height: 40px;
+            border: 3px solid gray;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+        margin-bottom: 20px;
+    }
+    .search_instruction{
+        width: 70%;
+        height: 100px;
+        background-color: rgb(119, 194, 44);
+        font-size: 20px;
+        border-radius: 4px;
+        padding: 20px;
+    }
+}
+
+@media  only screen and (max-width: 1150px) {
+    .filter_wrap{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 818px){
+    .filter_wrap{
+        margin: 0 auto;
+        padding: 20px 2px;
+        
+    }
+}

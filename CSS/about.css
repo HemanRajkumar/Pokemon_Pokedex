@@ -1,0 +1,28 @@
+.about{
+    text-align: center;
+    padding: 30px 50px;
+
+    h1{
+        color: #ffcc00;
+        margin-bottom : 10px ;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    p{
+        margin-bottom: 20px;
+        color: #555555;
+    }
+    
+    strong{
+        color: red;
+    }
+}
+
+.about p:last-of-type{
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 818px) {
+    .about p{
+        font-size: 20px;
+    }
+}

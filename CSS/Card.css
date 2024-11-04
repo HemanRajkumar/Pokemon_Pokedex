@@ -1,0 +1,51 @@
+.carditem{
+    background-color: #e6bc2f;
+    a{
+        filter: brightness(0) invert(1);
+    }
+}
+.rom{
+    padding: 20px 30px;
+    p{
+        color: #555555;
+        font-size: large;
+    }
+}
+h1{
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom : 10px ;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.list_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_item{
+    background-image: url(../Images/Background/container_bg.png);
+    margin: 15px 15px;
+    width: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+    text-align: center;
+    img{
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    span{
+        font-weight: bold;
+    }
+}
+.game_font{
+    font-size: 13px;
+}
+.item_item:hover{
+    width: 210px;
+    color: #555555;
+}

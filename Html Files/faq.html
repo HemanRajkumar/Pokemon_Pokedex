@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Pokedex</title>
+    <link rel="stylesheet" href="../CSS/faq.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Images/assets/pokeball.svg">
+    
+</head>
+<body>
+    <header>
+        <!-- First Menu -->
+        <div class="menu1">
+            <!-- Important Links -->
+            <div class="menu1_out">
+                <ul class="menu1_links">
+                    <li class="menu1_item" id="pokemon_logo"><a href="../index.html"  class="menu1_link"><img src="../Images/Menu1/Pokemon.png" alt=""  height="60px" class="poke_logo"></a></li>
+                    <li class="menu1_item" id="About_us"><a href="about us.html" class="menu1_link"><img src="../Images/Menu1/About Us.png" alt="" width="60px" class="about_logo"></a></li>
+                    <li class="menu1_item" id="Profile"><a href="contact us.html" class="menu1_link"><img src="../Images/Menu1/Contact Us.png" alt="" width="60px" class="img_profile"></a></li>
+                    
+                    <!-- Menu Slider -->
+                    <input type="checkbox" name="" id="menu1_check" hidden>
+                    <!-- Menu inside Slider -->
+                    <nav class="menu1_in">
+                        <ul class="in1_links">
+                            <li class="in1_items"><a href="free rom.html" class="in1_link"><img src="../Images/Menu1/Free Poke Roms.png" alt="" width="60px" class="roms_logo in1_items_logo"></a></li>
+                            <li class="in1_items"><a href="free games.html" class="in1_link"><img src="../Images/Menu1/Free Poke Games.png" alt="" width="60px" class="games_logo in1_items_logo"></a></li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- Slider Images -->
+                    <label for="menu1_check" class="hamburger1">
+                        <img src="../Images/Slider/Forward.png" alt="" height="50px" width="50px" class="button1">
+                    </label>
+                    <!-- Removable Menu -->
+                    <span class="menu1_on_off">
+                        <li class="menu1_item" id="rom_item"><a href="free rom.html" class="menu1_link"><img src="../Images/Menu1/Free Poke Roms.png" alt="" width="60px" class="roms_logo"></a></li>
+                        <li class="menu1_item"  id="games_item"><a href="free games.html" class="menu1_link"><img src="../Images/Menu1/Free Poke Games.png" alt="" width="60px" class="games_logo"></a></li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        <div class="menu2">
+            <!-- Hamburger -->
+            <input type="checkbox" name="" id="menu2_check" hidden>
+            <label for="menu2_check" class="hamburger2" id="hamburger2" onclick="button2()">
+                <div class="bar_slide" id="han1"></div>
+                <div class="bar_slide" id="han2"></div>
+                <div class="bar_slide" id="han3"></div>
+            </label>
+            <!-- Second Menu -->
+            <div class="menu2_out" id="menu2_out">
+                <!-- Navigations -->
+                <ul class="menu2_links">
+                    <li class="menu2_item item2 homeitem"><a href="../index.html" class="menu2_link icon_title"><span class="home_icon icon"><img src="../Images/Icon/Home.png" alt="" height="50px " class="home_color"><span class="home_title icon_title home_color">Home</span></span></a></li>
+                    
+                    <li class="menu2_item item2 pokedexitem"><a href="pokedex.html" class="menu2_link icon_title"><span class="pokedex_icon icon"><img src="../Images/Icon/Pokedex.png" alt="" height="50px" class="pokedex_color"><span class="pokedex_title icon_title pokedex_color">Pokedex</span></span></a></li>
+                    
+                    <li class="menu2_item item2 pokeitem"><a href="items.html" class="menu2_link icon_title"><span class="items_icon icon"><img src="../Images/Icon/Poke Items.png" alt="" height="50px" class="item_color"><span class="items_title icon_title item_color">PokeItems</span></span></a></li>
+                    
+                    <li class="menu2_item item2 carditem"><a href="Cards.html" class="menu2_link icon_title"><span class="cards_icon icon"><img src="../Images/Icon/Cards.png" alt="" height="50px" class="card_color"><span class="cards_title icon_title card_color">PokeCards</span></span></a></li>
+                    
+                    <li class="menu2_item quizitem"><a href="quiz.html" class="menu2_link icon_title"><span class="quiz_icon icon"><img src="../Images/Icon/Quizs.png" alt="" height="50px" class="quiz_color"><span class="quiz_title icon_title quiz_color">DaliyQuiz</span></span></a></li>
+                </ul>
+                
+            </div>
+            <div class="underline" id="underline">
+                <!-- Navigation Underlines -->
+                <ul class="bars">
+                    <li class="bar" id="bar1"></li>
+                    <li class="bar" id="bar2"></li>
+                    <li class="bar" id="bar3"></li>
+                    <li class="bar" id="bar4"></li>
+                    <li class="bar" id="bar5"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="contain1">
+                <div class="faq_items">
+                    <h1>Frequently Asked Questions</h1>
+            
+                    <div class="faq-item">
+                        <h2>1. What is a Pokedex?</h2>
+                        <p>A Pokédex is a comprehensive digital encyclopedia of Pokémon. It provides detailed information on each Pokémon species, including their abilities, stats, evolutions, types, and more. In the games, the Pokédex helps trainers keep track of the Pokémon they've encountered and captured.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>2. How do I search for a Pokémon on this site?</h2>
+                        <p>You can use the search bar at the top of the page to quickly find any Pokémon by name, type, or number. Simply start typing the Pokémon's name, and suggestions will appear as you type.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>3. Do you have information on all Pokémon?</h2>
+                        <p>Yes! Our Pokédex includes every Pokémon from all generations, including regional forms, Mega Evolutions, and Gigantamax forms. We keep our database up to date with the latest games and updates.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>4. Can I filter Pokémon by type or generation?</h2>
+                        <p>Yes, you can filter Pokémon based on their type (like Water, Fire, Grass, etc.) and generation (from Generation I to the latest). Use the filter options in the Pokédex to narrow down your search.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>5. What is the difference between evolutions and Mega Evolutions?</h2>
+                        <p>Regular evolutions occur when a Pokémon reaches a certain level or meets specific conditions (like using an Evolution Stone). Mega Evolution, on the other hand, is a temporary transformation that can be triggered during battle when a Pokémon holds a Mega Stone.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>6. Do you offer guides or strategies for Pokémon games?</h2>
+                        <p>Yes! Alongside our Pokédex, we offer detailed guides, tips, and strategies to help you in various Pokémon games. Check out our <strong>Guides</strong> section for the latest content on battles, breeding, competitive play, and more.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>7. Can I contribute to the site?</h2>
+                        <p>We love community involvement! While the core content is maintained by our team, we welcome suggestions, corrections, and contributions from fellow trainers. Feel free to contact us at [Insert Contact Email] to get involved.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>8. Is this site affiliated with The Pokémon Company or Nintendo?</h2>
+                        <p>No, <strong>Pokedex</strong> is an independent fan website and is not affiliated with or endorsed by The Pokémon Company, Game Freak, or Nintendo. We are a fan-made resource created by and for Pokémon enthusiasts.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h2>9. How can I contact you?</h2>
+                        <p>If you have any questions, suggestions, or feedback, please reach out to us at hemanrajkumar359660070@gmail.com. We're happy to hear from fellow trainers!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer class="foot">
+        <div class="foot1">
+            
+            <div class="row">
+                <div class="foot_col">
+                    <h2>Explore Pokémon World</h2>
+                    <ul class="ul3">
+                        <li><a href="Generation.html">Pokemon Generations</a></li>
+                        <li><a href="pokedex.html">Pokedex</a></li>
+                        <li><a href="https://discord.gg/jKE6HjB7">Community Hub</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="foot_col">
+                    <h2>Support</h2>
+                    <ul class="ul4">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                        <div class="social_media">
+                            <a href="https://www.linkedin.com/in/hemanrajkumar/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/HemanRajkumar"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/heman_rajkumar?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/Heman27933?t=wK3ZYz1yc8E7ggHIlZGjSw&s=09"><i class="fab fa-twitter"></i></a>
+                            
+                        </div>
+                        
+                    </ul>
+                </div>
+                
+                <div class="foot_col Disclaimer">
+                    <h2>Disclaimer:</h2>
+                    <br>
+                    <p>This is a fan-made website and is not affiliated with or endorsed by Nintendo, Game Freak, or The Pokémon Company.</p>
+                    
+                    <br>
+                    <p>&copy; 2024 Pokémon World. All Rights Reserved.</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="../Java Script/header_footer.js" ></script>
+
+</body>
+</html>

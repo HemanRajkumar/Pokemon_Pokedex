@@ -1,0 +1,37 @@
+.homeitem{
+    background-color: grey;
+    a{
+        filter: brightness(0) invert(1);
+    }
+}
+
+
+
+
+.map_img{
+    width: 100%;
+    .slide_img{
+        width: 100%;
+    }
+    position: relative;
+}
+
+
+
+
+.btn{
+    background-color: rgba(225, 225, 225, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+   
+}
+.left{
+    left: 0;
+    bottom: 45%;
+}
+.right{
+    bottom: 45%;
+    right: 0;
+    
+}

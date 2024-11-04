@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Items - Pokedex</title>
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/items.css">
+    <link rel="icon" href="../Images/assets/pokeball.svg">
+</head>
+<body>
+    <header>
+        <!-- First Menu -->
+        <div class="menu1">
+            <!-- Important Links -->
+            <div class="menu1_out">
+                <ul class="menu1_links">
+                    <li class="menu1_item" id="pokemon_logo"><a href="../index.html"  class="menu1_link"><img src="../Images/Menu1/Pokemon.png" alt=""  height="60px" class="poke_logo"></a></li>
+                    <li class="menu1_item" id="About_us"><a href="about us.html" class="menu1_link"><img src="../Images/Menu1/About Us.png" alt="" width="60px" class="about_logo"></a></li>
+                    <li class="menu1_item" id="Profile"><a href="contact us.html" class="menu1_link"><img src="../Images/Menu1/Contact Us.png" alt="" width="60px" class="img_profile"></a></li>
+                    
+                    <!-- Menu Slider -->
+                    <input type="checkbox" name="" id="menu1_check" hidden>
+                    <!-- Menu inside Slider -->
+                    <nav class="menu1_in">
+                        <ul class="in1_links">
+                            <li class="in1_items"><a href="free rom.html" class="in1_link"><img src="../Images/Menu1/Free Poke Roms.png" alt="" width="60px" class="roms_logo in1_items_logo"></a></li>
+                            <li class="in1_items"><a href="free games.html" class="in1_link"><img src="../Images/Menu1/Free Poke Games.png" alt="" width="60px" class="games_logo in1_items_logo"></a></li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- Slider Images -->
+                    <label for="menu1_check" class="hamburger1">
+                        <img src="../Images/Slider/Forward.png" alt="" height="50px" width="50px" class="button1">
+                    </label>
+                    <!-- Removable Menu -->
+                    <span class="menu1_on_off">
+                        <li class="menu1_item" id="rom_item"><a href="free rom.html" class="menu1_link"><img src="../Images/Menu1/Free Poke Roms.png" alt="" width="60px" class="roms_logo"></a></li>
+                        <li class="menu1_item"  id="games_item"><a href="free games.html" class="menu1_link"><img src="../Images/Menu1/Free Poke Games.png" alt="" width="60px" class="games_logo"></a></li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        <div class="menu2">
+            <!-- Hamburger -->
+            <input type="checkbox" name="" id="menu2_check" hidden>
+            <label for="menu2_check" class="hamburger2" id="hamburger2" onclick="button2()">
+                <div class="bar_slide" id="han1"></div>
+                <div class="bar_slide" id="han2"></div>
+                <div class="bar_slide" id="han3"></div>
+            </label>
+            <!-- Second Menu -->
+            <div class="menu2_out" id="menu2_out">
+                <!-- Navigations -->
+                <ul class="menu2_links">
+                    <li class="menu2_item item2 homeitem"><a href="../index.html" class="menu2_link icon_title"><span class="home_icon icon"><img src="../Images/Icon/Home.png" alt="" height="50px " class="home_color"><span class="home_title icon_title home_color">Home</span></span></a></li>
+                    
+                    <li class="menu2_item item2 pokedexitem"><a href="pokedex.html" class="menu2_link icon_title"><span class="pokedex_icon icon"><img src="../Images/Icon/Pokedex.png" alt="" height="50px" class="pokedex_color"><span class="pokedex_title icon_title pokedex_color">Pokedex</span></span></a></li>
+                    
+                    <li class="menu2_item item2 pokeitem"><a href="items.html" class="menu2_link icon_title"><span class="items_icon icon"><img src="../Images/Icon/Poke Items.png" alt="" height="50px" class="item_color"><span class="items_title icon_title item_color">PokeItems</span></span></a></li>
+                    
+                    <li class="menu2_item item2 carditem"><a href="Cards.html" class="menu2_link icon_title"><span class="cards_icon icon"><img src="../Images/Icon/Cards.png" alt="" height="50px" class="card_color"><span class="cards_title icon_title card_color">PokeCards</span></span></a></li>
+                    
+                    <li class="menu2_item quizitem"><a href="quiz.html" class="menu2_link icon_title"><span class="quiz_icon icon"><img src="../Images/Icon/Quizs.png" alt="" height="50px" class="quiz_color"><span class="quiz_title icon_title quiz_color">DaliyQuiz</span></span></a></li>
+                </ul>
+                
+            </div>
+            <div class="underline" id="underline">
+                <!-- Navigation Underlines -->
+                <ul class="bars">
+                    <li class="bar" id="bar1"></li>
+                    <li class="bar" id="bar2"></li>
+                    <li class="bar" id="bar3"></li>
+                    <li class="bar" id="bar4"></li>
+                    <li class="bar" id="bar5"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="container">
+            <div class="contain1">
+                <h1>Pokemon Items</h1>   
+            </div>
+            <div class="search_container">
+                <div class="search_wrapper">
+                    <div class="search_wrap">
+                        <label for="search" class="search_label">Name</label>
+                        <br>
+                        <input type="text" class="search" placeholder="Search">
+                    </div>
+                    <div class="search_instruction">
+                        <p>Search for a Pokémon Items by name</p>
+                    </div>
+                    <div class="sort_wrapper">
+                        <div class="sort_Category"><label for="category">Category: </label>
+                            <div class="select_btn">
+                                <div class="sort_img_wrapper">
+                                    <img src="../Images/Icon/pokeball_gray.png" alt="" height="40px">
+                                    <span class="sBtn_Text">All</span>
+                                </div>
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+    
+                            <ul class="options">
+                                <li class="option">
+                                    <span class="option_text">All</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">Battle Items</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">Berries</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">General Items</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">Hold Items</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">Machines</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">Medicine</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option_text">Pokeballs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="contain1">
+                <div class="items_list">
+                    <div class="list_wrapper">
+                        <table class="items">
+                            <thead>
+                                <tr>
+                                    <th class="name">Name</th>
+                                    <th class="category">Category</th>
+                                    <th class="effect">Effect</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/ability-capsule.png" alt="Ability Capsule">Ability Capsule</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/ability-urge.png" alt=" Ability Urge">Ability Urge</div></td>
+                                    <td class="cell_fixed cate">Battle Items</td>
+                                    <td class="cell_Long_text">When used, it activates the Ability of an ally Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/abomasite.png">Abomasite</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Enables Abomasnow to Mega Evolve during battle.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/absolite.png">Absolite</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Enables Absol to Mega Evolve during battle.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/adamant-orb.png">Adamant Orb</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Increases the power of Dragon- and Steel-type moves when held by Dialga.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/adrenaline-orb.png">Adrenaline Orb</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Using it makes wild Pokémon more likely to call for help. If held by a Pokémon, it boosts Speed when intimidated. It can be used only once.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/aguav-berry.png">Aguav Berry</div></td>
+                                    <td class="cell_fixed cate">Berries</td>
+                                    <td class="cell_Long_text">Restores HP if it's low, but may cause confusion.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/antidote.png">Antidote</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Cures a Pokémon of poisoning.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/armor-fossil.png">Armor Fossil</div></td>
+                                    <td class="cell_fixed cate">General Items</td>
+                                    <td class="cell_Long_text">A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/assault-vest.png">Assault Vest</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Raises Special Defense but prevents the use of status moves.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/awakening.png">Awakening</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Wakes up a sleeping Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/babiri-berry.png">Babiri Berry</div></td>
+                                    <td class="cell_fixed cate">Berries</td>
+                                    <td class="cell_Long_text">Weakens a supereffective Steel-type attack against the holding Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/balm-mushroom.png">Balm Mushroom</div></td>
+                                    <td class="cell_fixed cate">General Items</td>
+                                    <td class="cell_Long_text">A rare mushroom which gives off a nice fragrance. A maniac will buy it for a high price.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/big-nugget.png">Big Nugget</div></td>
+                                    <td class="cell_fixed cate">General Items</td>
+                                    <td class="cell_Long_text">A big nugget of pure gold that gives off a lustrous gleam. A maniac will buy it for a high price.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/big-pearl.png">Big Pearl</div></td>
+                                    <td class="cell_fixed cate">General Items</td>
+                                    <td class="cell_Long_text">A quite-large pearl that sparkles in a pretty silver color. It can be sold at a high price to shops.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/binding-band.png">Binding Band</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">A band that increases the power of binding moves when held.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/black-belt.png">Black Belt</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Increases the power of Fighting-type moves.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/calcium.png">Calcium</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Increases Special Attack EVs by 10.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/cameruptite.png">Cameruptite</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Enables Camerupt to Mega Evolve during battle.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/charcoal.png">Charcoal</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Increases the power of Fire-type moves.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/charizardite-x.png">Charizardite X</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Enables Charizard to Mega Evolve during battle.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/charizardite-y.png">Charizardite Y</div></td>
+                                    <td class="cell_fixed cate">Hold Items</td>
+                                    <td class="cell_Long_text">Enables Charizard to Mega Evolve during battle.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/cheri-berry.png">Cheri Berry</div></td>
+                                    <td class="cell_fixed cate">Berries</td>
+                                    <td class="cell_Long_text">If held by a Pokémon, it recovers from paralysis.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/cherish-ball.png">Cherish Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">Rre Poké Ball used for event Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/chesto-berry.png">Chesto Berry</div></td>
+                                    <td class="cell_fixed cate">Berries</td>
+                                    <td class="cell_Long_text">If held by a Pokémon, it recovers from sleep.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/dive-ball.png">Dive Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">Catches Pokémon that live in water with 3.5x the rate of a standard Poké Ball.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/dream-ball.png">Dream Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">A special Poké Ball that appears out of nowhere in a bag at the Entree Forest. It can catch any Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/dusk-ball.png">Dusk Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">Catches Pokémon at night or in caves with 3x the rate of a standard Poké Ball.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/elixir.png">Elixir</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Restores 10 PP to all moves of a Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/ether.png">Ether</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Restores 10 PP to one move of a Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/fast-ball.png">Fast Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">A Poké Ball that makes it easier to catch Pokémon which are quick to run away.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/fresh-water.png">Fresh Water</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Restores 30 HP.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/friend-ball.png">Friend Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">A Poké Ball that makes caught Pokémon more friendly.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/full-heal.png">Full Heal</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Cures a Pokémon of any status condition.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/full-restore.png">Full Restore</div></td>
+                                    <td class="cell_fixed cate">Medicine</td>
+                                    <td class="cell_Long_text">Fully restores HP and cures any status condition of a Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/great-ball.png">Great Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">Catches wild Pokémon with 1.5x the rate of a Poké Ball.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/heal-ball.png">Heal Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">Catches wild Pokémon and fully heals them.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/heavy-ball.png">Heavy Ball</div></td>
+                                    <td class="cell_fixed cate">Pokeballs</td>
+                                    <td class="cell_Long_text">A Poké Ball for catching very heavy Pokémon.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-normal.png">HM01</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Cut.
+                                        Privacy</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-flying.png">HM02</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Fly.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-water.png">HM03</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Surf.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-normal.png">HM04</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Strength.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-normal.png">HM05</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Flash/Defog/Whirlpool/Waterfall.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-water.png">HM06</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Whirlpool/Rock Smash/Dive.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-water.png">HM07</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Waterfall.</td>
+                                </tr>
+                                <tr>
+                                    <td class="cell_fixed fixed"><div><img src="../Images/Items/tm-water.png">HM08</div></td>
+                                    <td class="cell_fixed cate">Machines</td>
+                                    <td class="cell_Long_text">Teaches the move Dive/Rock Climb.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                
+                <div class="not_found_message" >
+                    <h2>Item Not Found</h2>
+                    <p>Try these suggestions to find a Poke Items</p>
+                    <ul>
+                        <li>Reduce the number of search parameters</li>
+                        <li>Search for only one Poke Item at a Time</li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+            
+    
+
+    </main>
+
+
+
+
+    <footer class="foot">
+        <div class="foot1">
+            
+            <div class="row">
+                <div class="foot_col">
+                    <h2>Explore Pokémon World</h2>
+                    <ul class="ul3">
+                        <li><a href="Generation.html">Pokemon Generations</a></li>
+                        <li><a href="pokedex.html">Pokedex</a></li>
+                        <li><a href="https://discord.gg/jKE6HjB7">Community Hub</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="foot_col">
+                    <h2>Support</h2>
+                    <ul class="ul4">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                        <div class="social_media">
+                            <a href="https://www.linkedin.com/in/hemanrajkumar/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/HemanRajkumar"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/heman_rajkumar?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/Heman27933?t=wK3ZYz1yc8E7ggHIlZGjSw&s=09"><i class="fab fa-twitter"></i></a>
+                            
+                        </div>
+                        
+                    </ul>
+                </div>
+                
+                <div class="foot_col Disclaimer">
+                    <h2>Disclaimer:</h2>
+                    <br>
+                    <p>This is a fan-made website and is not affiliated with or endorsed by Nintendo, Game Freak, or The Pokémon Company.</p>
+                    
+                    <br>
+                    <p>&copy; 2024 Pokémon World. All Rights Reserved.</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="../Java Script/header_footer.js" ></script>
+    <script src="../Java Script/items.js"></script>
+    
+</body>
+</html>

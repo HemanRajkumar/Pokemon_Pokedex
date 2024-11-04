@@ -1,0 +1,33 @@
+.Privacy_Policy ul li{
+    list-style: disc ;
+}
+.Privacy_Policy {
+    padding: 20px 30px;
+    color: #555555;
+    h1{
+        color: #ffcc00;;
+        text-align: center;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    ul{
+        padding: 0 30px;
+        margin-bottom: 20px;
+
+    }
+    strong{
+        color: red;
+    }
+    span{
+        color: blue;
+    }
+}
+
+@media only screen and (min-width: 818px){
+    .Privacy_Policy p , .Privacy_Policy ul li{ 
+        font-size: 20px;
+    }
+}

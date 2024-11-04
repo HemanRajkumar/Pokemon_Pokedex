@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Generations - Pokedex</title>
+    <link rel="stylesheet" href="../CSS/generation.css">
+    <link rel="stylesheet" href="../CSS/header_footer.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Images/assets/pokeball.svg">
+    
+</head>
+<body>
+    <header>
+        <!-- First Menu -->
+        <div class="menu1">
+            <!-- Important Links -->
+            <div class="menu1_out">
+                <ul class="menu1_links">
+                    <li class="menu1_item" id="pokemon_logo"><a href="../index.html"  class="menu1_link"><img src="../Images/Menu1/Pokemon.png" alt=""  height="60px" class="poke_logo"></a></li>
+                    <li class="menu1_item" id="About_us"><a href="about us.html" class="menu1_link"><img src="../Images/Menu1/About Us.png" alt="" width="60px" class="about_logo"></a></li>
+                    <li class="menu1_item" id="Profile"><a href="contact us.html" class="menu1_link"><img src="../Images/Menu1/Contact Us.png" alt="" width="60px" class="img_profile"></a></li>
+                    
+                    <!-- Menu Slider -->
+                    <input type="checkbox" name="" id="menu1_check" hidden>
+                    <!-- Menu inside Slider -->
+                    <nav class="menu1_in">
+                        <ul class="in1_links">
+                            <li class="in1_items"><a href="free rom.html" class="in1_link"><img src="../Images/Menu1/Free Poke Roms.png" alt="" width="60px" class="roms_logo in1_items_logo"></a></li>
+                            <li class="in1_items"><a href="free games.html" class="in1_link"><img src="../Images/Menu1/Free Poke Games.png" alt="" width="60px" class="games_logo in1_items_logo"></a></li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- Slider Images -->
+                    <label for="menu1_check" class="hamburger1">
+                        <img src="../Images/Slider/Forward.png" alt="" height="50px" width="50px" class="button1">
+                    </label>
+                    <!-- Removable Menu -->
+                    <span class="menu1_on_off">
+                        <li class="menu1_item" id="rom_item"><a href="free rom.html" class="menu1_link"><img src="../Images/Menu1/Free Poke Roms.png" alt="" width="60px" class="roms_logo"></a></li>
+                        <li class="menu1_item"  id="games_item"><a href="free games.html" class="menu1_link"><img src="../Images/Menu1/Free Poke Games.png" alt="" width="60px" class="games_logo"></a></li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+        <div class="menu2">
+            <!-- Hamburger -->
+            <input type="checkbox" name="" id="menu2_check" hidden>
+            <label for="menu2_check" class="hamburger2" id="hamburger2" onclick="button2()">
+                <div class="bar_slide" id="han1"></div>
+                <div class="bar_slide" id="han2"></div>
+                <div class="bar_slide" id="han3"></div>
+            </label>
+            <!-- Second Menu -->
+            <div class="menu2_out" id="menu2_out">
+                <!-- Navigations -->
+                <ul class="menu2_links">
+                    <li class="menu2_item item2 homeitem"><a href="../index.html" class="menu2_link icon_title"><span class="home_icon icon"><img src="../Images/Icon/Home.png" alt="" height="50px " class="home_color"><span class="home_title icon_title home_color">Home</span></span></a></li>
+                    
+                    <li class="menu2_item item2 pokedexitem"><a href="pokedex.html" class="menu2_link icon_title"><span class="pokedex_icon icon"><img src="../Images/Icon/Pokedex.png" alt="" height="50px" class="pokedex_color"><span class="pokedex_title icon_title pokedex_color">Pokedex</span></span></a></li>
+                    
+                    <li class="menu2_item item2 pokeitem"><a href="items.html" class="menu2_link icon_title"><span class="items_icon icon"><img src="../Images/Icon/Poke Items.png" alt="" height="50px" class="item_color"><span class="items_title icon_title item_color">PokeItems</span></span></a></li>
+                    
+                    <li class="menu2_item item2 carditem"><a href="Cards.html" class="menu2_link icon_title"><span class="cards_icon icon"><img src="../Images/Icon/Cards.png" alt="" height="50px" class="card_color"><span class="cards_title icon_title card_color">PokeCards</span></span></a></li>
+                    
+                    <li class="menu2_item quizitem"><a href="quiz.html" class="menu2_link icon_title"><span class="quiz_icon icon"><img src="../Images/Icon/Quizs.png" alt="" height="50px" class="quiz_color"><span class="quiz_title icon_title quiz_color">DaliyQuiz</span></span></a></li>
+                </ul>
+                
+            </div>
+            <div class="underline" id="underline">
+                <!-- Navigation Underlines -->
+                <ul class="bars">
+                    <li class="bar" id="bar1"></li>
+                    <li class="bar" id="bar2"></li>
+                    <li class="bar" id="bar3"></li>
+                    <li class="bar" id="bar4"></li>
+                    <li class="bar" id="bar5"></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <div class="container">
+            <div class="contain1">
+                <div class="generations">
+                    <h1>Pokemon Generations</h1>
+                    <p class="intro">Explore the Pokémon Generation introduced in each one!</p>
+                    <div class="generation_list">
+                        <div class="generation Kanto">
+                            <h2>Generation I</h2>
+                            <img src="../Images/Maps/KantoMap.png" alt="Kanto">
+                            <p>Kanto, named after the real-world region of Japan by the same name, features a variety of cities surrounded by mountains and plains, and even features a volcano on Cinnabar Island. Every town in the Pokémon Kanto region is named in reference to a color, like Viridian City, Lavender Town, and others. Players begin their journey in the quiet Pallet Town (a reference to the blank canvas of a painting) and the starter Pokémon offered to players in a basic Poké Ball are Squirtle, Charmander, and Bulbasaur.</p>
+                        </div>
+                        <div class="generation Johto">
+                            <h2>Generation II</h2>
+                            <img src="../Images/Maps/JohtoMap.png" alt="Johto">
+                            <p>To the west of Kanto lies the Johto region, the setting for the second generation of Pokémon games, including Silver, Gold, Crystal, and their remakes HeartGold and SoulSilver. It is part of a landmass bordered by coastline at the south, and this region introduced 100 new Pokémon in addition to the previously discovered Gen 1 species.</p>
+                            <p>Most of the towns in Johto are named in reference to plants and associated nature, like New Bark Town, Olivine City, and Mahogany Town. Players here were presented the choice of starters Cyndaquil, Totodile, and Chikorita.</p>
+                        </div>
+                        <div class="generation Hoenn">
+                            <h2>Generation III</h2>
+                            <img src="../Images/Maps/HoennMap.png" alt="Hoenn">
+                            <p>The Hoenn region was separated from the Kanto/Johto landmass as the setting in Generation 3, spanning Ruby, Sapphire, Emerald, and the Omega Ruby and Alpha Sapphire remakes. Based on the island of Kyushu, the region features a great deal of water to balance the landmass, in keeping with the lore of primal Groudon and Kyogre being the titans of land and sea. Most of the towns in Hoenn are immersed in nature, some only being accessible by travel through and even beneath water.</p>
+                            <p>Hoenn was a more tropical environment, reflected in many of the types of Pokémon that could be found throughout trainers' journeys. This game introduced the idea of varying weather patterns, including rainfall, volcanic ash, and bright sunlight. Pokémon like Castform could even react and change form based on the environmental conditions here. Starters in this region included Treecko, Torchic, and Mudkip.
+
+                            </p>
+                        </div>
+                        <div class="generation Sinnoh">
+                            <h2>Generation IV</h2>
+                            <img src="../Images/Maps/SinnohMap.png" alt="Sinnoh">
+                            <p>To the north of Hoenn, players were introduced to Sinnoh, an island region modeled after Japan's own northernmost territory, Hokkaido. This region is where the Generation 4 Pokémon games took place, including Diamond, Pearl, Platinum, as well as more recent titles Brilliant Diamond, Shining Pearl, and Legends: Arceus.</p>
+                            <p>In contrast to its southern partner Hoenn, Sinnoh featured fewer waterways. Instead it focused on the central landmass divided by the massive Mt. Coronet in the center. To the northeast, the region featured a Battle Zone island. There was also a massive tundra to the very north of the island, and some of the cities in the game are directly based on Hokkaido's notable locales, like Pokémon's Jubilife City standing in for Sapporo City. Pokémon starters here include Piplup, Turtwig, and Chimchar.</p>
+                        </div>
+                        <div class="generation Unova">
+                            <h2>Generation V</h2>
+                            <img src="../Images/Maps/UnovaMap.png" alt="Unova">
+                            <p>Moving out of the Japanese-themed regions, Generation 5's Unova region was actually inspired by New York City, reflected in the metropolitan regions and the more specifically themed Pokémon (such as the fan-favorites Garbodor, a garbage Pokémon, and Vanillite, an ice cream Pokémon). Despite the overall layout being based on New York City, there are landmarks from throughout the state that make up the entire region.</p>
+                            <p>In this region, the whole area changes climate in-game about every 30 days, unlocking changes in Pokémon activity and special events. Spring, summer, autumn, and winter all occur across the entire territory.</p>
+                        </div>
+                        <div class="generation Kalos">
+                            <h2>Generation VI</h2>
+                            <img src="../Images/Maps/KalosMap.png" alt="Kalos">
+                            <p>The Kalos region is the sixth region to be introduced, serving as the setting for Pokémon X and Y. Shaped like a five-pointed star, the area is inspired by metropolitan France, with city names like Lumiose and Shalour. Froakie, Chespin, and Fennekin are the starters featured here. Unlike many of the other regions in earlier games, Kalos is isolated from other regions — in fact, in the Pokémon anime series, it must be reached by airplane.</p>
+                            <p>Players in the Kalos region can travel to a Poké Ball factory, a massive facility that produces every collectible Poké Ball used in the Kalos region. Overall, the region's geography is extremely varied, including oceanic borders to the west and mountains to the east. It features rivers throughout, and it is divided overall into Central, Coastal, and Mountain Kalos, all meeting in the center at Lumiose City.
+                            </p>
+                        </div>
+                        <div class="generation Alola">
+                            <h2>Generation VII</h2>
+                            <img src="../Images/Maps/AlolaMap.png" alt="Alola">
+                            <p>Alola is a unique region in the Pokémon world, split into four natural islands and one manmade island. Inspired by Hawaii, it is the backdrop for the Generation 7 Pokemon games Sun, Ultra Sun, Moon, and Ultra Moon. Within the game world, it is a popular tourist destination and all towns and cities are very integrated with nature.</p>
+                            <p>Starter Pokémon in Alola include Rowlet, Litten, and Popplio. After picking a companion Pokémon, players must travel between the five islands: Melemele, Akala, Ula'ula, Poni, and Aether Paradise (a large floating structure). The region is surrounded by water and features volcanoes, rough terrain, rocky canyons, and dense jungles. Many previously discovered Pokémon have tropical variants, known as their Alolan forms, that can be found on the islands.
+
+                            </p>
+                        </div>
+                        <div class="generation Galar">
+                            <h2>Generation VIII</h2>
+                            <img src="../Images/Maps/GalarMap.png" alt="Galar">
+                            <p>Galar is the eighth region in the Pokémon series. It is one of the first to have more of its landmass added after the core title of the game, featured in the Crown Tundra and Isle of Armor expansions. Notably inspired by Great Britain (as if viewed upside-down), Galar incorporates cultural references from England, Wales, and Scotland into its topography and cities.
+                            </p>
+                            <p>he Pokémon Sword and Shield titles take place in the Galar region, named for the legendary creatures Zacian and Zamazenta, who resemble traditional Coat of Arms creatures and incorporate their namesakes — the sword and shield — into their final forms. Players also met the new starters Sobble, Grookey, and Scorbunny here, each inspired by an element of British popular culture.</p>
+                        </div>
+                        <div class="generation Paldea">
+                            <h2>Generation IX</h2>
+                            <img src="../Images/Maps/Paldea.png" alt="Paldea">
+                            <p>Paldea is the latest Pokémon region to be unveiled. This peninsular region is mostly surrounded by water except for its northern mountain range. It's inspired in both geography and culture by the Iberian Peninsula, and all of its towns plus certain notable landmarks are named after culinary items and dishes. The Paldean starters are Sprigatito, Fuecoco, and Quaxly.
+                            </p>
+                            <p>The Naranja Academy and Uva Academy are the largest schools in the Pokémon world. In addition to housing these schools, Paldea also has Area Zero. This dangerous place is located in the center of Paldea, in the Great Crater of Paldea. It was formed millions of years ago and it contains wild Pokémon, time-displaced Paradox Pokémon, and Tetra Orb-enhanced Terestal Pokémon. Uncovering the mystery of Area Zero, and whether the Legendary Normal Type Terapagos resides there, is a central part of the player's Treasure Hunt journey.
+
+                            </p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="foot">
+        <div class="foot1">
+            
+            <div class="row">
+                <div class="foot_col">
+                    <h2>Explore Pokémon World</h2>
+                    <ul class="ul3">
+                        <li><a href="Generation.html">Pokemon Generations</a></li>
+                        <li><a href="pokedex.html">Pokedex</a></li>
+                        <li><a href="https://discord.gg/jKE6HjB7">Community Hub</a></li>
+                        
+                    </ul>
+                    
+                </div>
+                
+                <div class="foot_col">
+                    <h2>Support</h2>
+                    <ul class="ul4">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                        <div class="social_media">
+                            <a href="https://www.linkedin.com/in/hemanrajkumar/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/HemanRajkumar"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/heman_rajkumar?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/Heman27933?t=wK3ZYz1yc8E7ggHIlZGjSw&s=09"><i class="fab fa-twitter"></i></a>
+                            
+                        </div>
+                        
+                    </ul>
+                </div>
+                
+                <div class="foot_col Disclaimer">
+                    <h2>Disclaimer:</h2>
+                    <br>
+                    <p>This is a fan-made website and is not affiliated with or endorsed by Nintendo, Game Freak, or The Pokémon Company.</p>
+                    
+                    <br>
+                    <p>&copy; 2024 Pokémon World. All Rights Reserved.</p>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="../Java Script/header_footer.js" ></script>
+
+    <script src="../Java Script/slider.js"></script>
+</body>
+</html>
