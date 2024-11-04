@@ -44,7 +44,7 @@
 
 .search_instruction{
     width: 400px;
-    height: 100px;
+    height: auto;
     background-color: rgb(119, 194, 44);
     font-size: 20px;
     border-radius: 4px;
@@ -252,7 +252,7 @@
     }
     .search_instruction{
         width: 70%;
-        height: 100px;
+        height: auto;
         background-color: rgb(119, 194, 44);
         font-size: 20px;
         border-radius: 4px;
