@@ -203,6 +203,31 @@ body{
 }
 
 
+@media only screen and (max-width: 590px){
+    .menu1_item{
+        padding: 0;
+    }
+    #About_us{
+        padding: 0;
+    }
+    #pokemon_logo{
+        margin-left: 1px;
+        padding: 0;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            img{
+                margin: 0 auto;
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
+
 
 .menu2_out{
     height: 100px;
