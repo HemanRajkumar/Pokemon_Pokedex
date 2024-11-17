@@ -63,3 +63,18 @@ function validateFeedback(){
         return false;
     }
 }
+function validateForm() {
+    const isNameValid = validateName();
+    const isEmailValid = validateEmail();
+    const isFeedbackValid = validateFeedback();
+
+    if (isNameValid && isEmailValid && isFeedbackValid) {
+
+        alert("Submitted successfully!");
+        window.location.href = "index.html";
+        return true; 
+    } else {
+        alert("Please fix the errors in the form before submitting."); 
+        return false; 
+    }
+}
