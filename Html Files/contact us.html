@@ -93,7 +93,7 @@
                 <div class="contact">
                     <h1 class="contact_title">Contact Us</h1>
                     <p>Have a question, suggestion, or feedback? We'd love to hear from you! Use the form below to get in touch with us.</p>
-                    <form action="../index.html" method="post">
+                    <form action="../index.html" method="post" onsubmit="return validateForm();">
                         <div class="form_row">
                             <div class="form_data input">
                                 <input type="text" id="name" onkeyup="validateName()" required>
