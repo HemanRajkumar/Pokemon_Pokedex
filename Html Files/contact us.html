@@ -96,17 +96,20 @@
                     <form action="../index.html" method="post">
                         <div class="form_row">
                             <div class="form_data input">
-                                <input type="text" required>
+                                <input type="text" id="name" onkeyup="validateName()" required>
                                 <label>Enter your Name</label>
                             </div>
+                            <div class="message" id="nameMessage"></div>
                             <div class="form_data input">
-                                <input type="text" required>
+                                <input type="text" id="email" onkeyup="validateEmail()" required>
                                 <label>Email Address</label>
                             </div>
+                            <div class="message" id="emailMessage"></div>
                             <div class="form_data textarea">
-                                <textarea cols="" rows="" required></textarea>
+                                <textarea cols="" rows=""  id="feedback" onkeyup="validateFeedback()" required></textarea>
                                 <label>Write your Message/Feedback</label>
                             </div>
+                            <div class="feedback" id="feedbackMessage"></div>
                             <div class="form_data submit_btn">
                                 <input type="submit" value="SUBMIT">
                             </div>
@@ -170,5 +173,6 @@
     <script src="../Java Script/header_footer.js" ></script>
 
     <script src="../Java Script/slider.js"></script>
+    <script src="../Java Script/form.js"></script>
 </body>
 </html>
