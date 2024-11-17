@@ -76,6 +76,7 @@ input,textarea{
         font-weight: bold;
         cursor: pointer;
         transition: 0.3s;
+        border-radius: 10px;
     }
 }
 .submit_btn :hover{
