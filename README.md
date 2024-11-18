@@ -1,1 +1,1 @@
-The Pokedex website is an interactive and comprehensive platform designed to provide detailed information on all known Pokemon. The primary objective of this project is to create a user-friendly database where users can search and explore Pokemon by various attributes such as type, abilities, stats, and moves.
+
